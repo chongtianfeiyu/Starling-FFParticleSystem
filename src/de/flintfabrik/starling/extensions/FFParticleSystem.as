@@ -1406,7 +1406,7 @@ package de.flintfabrik.starling.extensions
 		
 		public function setStyle(particleStyle:FFParticleStyle = null, mergeWithPredecessor:Boolean = true):void
 		{
-			if (particleStyle == null) particleStyle = new $defaultStyle() as FFParticleStyle;
+			if (particleStyle == null) particleStyle = new defaultStyle() as FFParticleStyle;
 			else if (particleStyle == __style || !particleStyle.effectType.isSupported) return;
 			else if (particleStyle.target) particleStyle.target.setStyle();
 			
